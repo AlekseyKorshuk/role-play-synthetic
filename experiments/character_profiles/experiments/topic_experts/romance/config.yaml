@@ -1,0 +1,19 @@
+seed_path: "./experiments/topic_experts/romance/seeds.jsonl"
+accepted_path: "./experiments/topic_experts/romance/accepted.jsonl"
+rejected_path: "./experiments/topic_experts/romance/rejected.jsonl"
+dataset_path: "AlekseyKorshuk/character-profiles-romance"
+num_samples_to_generate: 10000
+model_name: "gpt-3.5-turbo"
+request_batch_size: 5
+num_cpus: 2
+rouge_cutoff: 0.5
+openai_generation_params:
+  max_tokens: 512
+  temperature: 1.0
+  top_p: 1.0
+  n: 1
+  stream: false
+  stop: null
+  presence_penalty: 0.0
+  frequency_penalty: 0.0
+system_prompt: "Generate a list of unique and diverse character profiles for a chatbot, focusing mainly on friendly characters. Each profile should consist of the chatbot's name, a description of their personality, and the categories or genres they belong to. The characters should be approachable and sociable, representing a wide range of backgrounds, professions, cultures, situations, and environments. Concentrate on characters that are romantic and lovely, that users can kiss in role-play (both male and female characters should be in the list), cuddle, happy, sweet, and more. Personalities should consist of a mix of positive traits, quirks, and any unique features or props they might have that contribute to their romantic demeanor. Be creative and ensure no two characters are too similar. Remember, the aim is to design characters that users would find enjoyable and comforting to interact with.\nEach of your characters should be unique and have unique name! Do not repeat yourself!"

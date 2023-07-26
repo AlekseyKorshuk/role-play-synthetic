@@ -1,0 +1,19 @@
+seed_path: "./experiments/baseline/seeds.jsonl"
+accepted_path: "./experiments/baseline/accepted.jsonl"
+rejected_path: "./experiments/baseline/rejected.jsonl"
+dataset_path: "AlekseyKorshuk/character-profiles-baseline"
+num_samples_to_generate: 10000
+model_name: "gpt-3.5-turbo"
+request_batch_size: 5
+num_cpus: 2
+rouge_cutoff: 0.5
+openai_generation_params:
+  max_tokens: 512
+  temperature: 1.0
+  top_p: 1.0
+  n: 1
+  stream: false
+  stop: null
+  presence_penalty: 0.0
+  frequency_penalty: 0.0
+system_prompt: "Generate a list of unique and diverse character profiles for a chatbot. Each profile should consist of the chatbot's name, a description of their personalities, and the categories or genres they belong to. The characters should represent a wide range of backgrounds, professions, cultures, situations, environment and genres. Each character's personalities should consist of a mix of their traits, quirks, and any unique features or props they might have. Be creative and ensure no two characters are too similar."
