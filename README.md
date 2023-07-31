@@ -39,7 +39,11 @@ As a result we can get characters like this:
 
 ## Bot builder
 
-Here we will use extended bot builder. Sample code might look like this:
+This stage of the pipeline can be done with any cloud provider with minor changes. Chai users prefer Vicuña's
+generations instead of OpenAI’s `gpt-3.5-turbo`. But you can use `gpt-3.5-turbo` or `gpt4`, take a look at this
+example: [link](./experiments/baseline/example.py).
+
+We will use extended bot builder. Sample code might look like this:
 
 ```python
 import os
@@ -137,8 +141,8 @@ Output:
 }
 ```
 
-We use templates and seeds to operate with bot builder. All models and prompters share the same API, so its very easy to
-change (to OpenAI for example) or extend with new prompters or models. Take a look at
+We use templates and seeds to operate with bot builder. All models and prompters share the same API, so it is very easy
+to change (to OpenAI for example) or extend with new prompters or models. Take a look at
 this [config.py](./experiments/topic_experts/romantic/config.py).
 
 As soon as we prepared seeds and templates in config.py, we are ready start generation:
