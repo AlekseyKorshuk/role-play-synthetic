@@ -7,6 +7,16 @@ Star this repository:
 
 [![GitHub stars](https://img.shields.io/github/stars/AlekseyKorshuk/role-play-synthetic?style=social)](https://github.com/AlekseyKorshuk/role-play-synthetic)
 
+# Available datasets
+
+HuggingFace datasets:
+
+- [Romantic](https://huggingface.co/datasets/AlekseyKorshuk/synthetic-romantic-characters)
+- [Friendly](https://huggingface.co/datasets/AlekseyKorshuk/synthetic-friendly-characters)
+- [Fight](https://huggingface.co/datasets/AlekseyKorshuk/synthetic-fight-characters)
+
+If you made a dataset with this project, I am happy to add yours here.
+
 # Pipeline
 
 The synthetic dataset generation pipeline consists of 2 main parts:
